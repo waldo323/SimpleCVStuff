@@ -1,5 +1,14 @@
 from SimpleCV import Camera, Display, Color
-import time
+import datetime, time
+
+
+def time_stamped(fname, fmt='%Y_%m_%d_%H%M%S.{fname}'):
+    return datetime.datetime.now().strftime(fmt).format(fname=fname)
+
+def timeFmt( fmt='%Y-%m-%d-%H:%M:%S'):
+    return datetime.datetime.now().strftime(fmt)
+#with open(time_stamped('myfile.txt'),'w') as outf:
+#    outf.write('data!')
 
 cam = Camera()
 
@@ -16,7 +25,7 @@ while not display.isDone():
 	img.save(display)
 	
 	if display.mouseLeft:
-		img.save("photobooth" + str(counter) + ".jpg")
+		img.save("./photos/" + time_stamped("photo.jpg"))
 		img.drawText("photo saved.", color=Color().getRandom())
 		img.save(display)
 		time.sleep(5)
