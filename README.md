@@ -9,9 +9,18 @@ Also, if there are things I can improve this will be a good way for me to find o
 
 
 (you can also install into a virtualenv. I didn't in this case)
+
+
 sudo apt-get update
+
+
 sudo apt-get -f install python-opencv python-scipy python-numpy python-pip 
 
+
 git clone https://github.com/sightmachine/SimpleCV.git SimpleCV
+
+
 cd SimpleCV
+
+
 sudo setup.py install
