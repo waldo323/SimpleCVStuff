@@ -1,7 +1,7 @@
 SimpleCVStuff
 =============
 
-for my work on this I intend to be working with mostly the photobooth script
+For my work on this, I intend to be working with mostly the photobooth script
 
 I found some issues with the instructions for installing SimpleCV.
 I will list what I did in hopes that it will help others.
